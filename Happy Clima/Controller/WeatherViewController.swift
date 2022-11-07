@@ -8,12 +8,14 @@
 import UIKit
 import CoreLocation
 
-class WeatherViewController: UIViewController, UITextFieldDelegate {
+class WeatherViewController: UIViewController {
     
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
+    
+
     
     var weatherManager = WeatherManager()
     let locationManager = CLLocationManager()
@@ -29,9 +31,16 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+}
+    
 //MARK: - UITextFieldDelegate
     
-   // extension WeatherViewController: UITextFieldDelegate {
+    extension WeatherViewController: UITextFieldDelegate {
+        
+        @IBAction func searchPressed(_ sender: UIButton) {
+            searchTextField.endEditing(true)
+            
+        }
         
         
    
