@@ -1,0 +1,23 @@
+//
+//  WeatherData.swift
+//  Happy Clima
+//
+//  Created by Vinicius Pinheiro de Oliveira on 07/11/22.
+//
+
+import Foundation
+
+struct WeatherData: Codable {
+    let name: String
+    let main: Main
+    let weather: [Weather]
+}
+
+struct Main: Codable {
+    let temp: Double
+}
+
+struct Weather: Codable {
+    let description: String
+    let id: Int
+}

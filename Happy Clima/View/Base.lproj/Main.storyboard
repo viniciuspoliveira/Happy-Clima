@@ -105,6 +105,12 @@
                             <constraint firstItem="kdJ-w9-dS0" firstAttribute="bottom" secondItem="K9q-Zq-Sxz" secondAttribute="bottom" id="bZv-OS-b1M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="mMV-zS-9ID" id="aWY-Dl-EAg"/>
+                        <outlet property="conditionImageView" destination="uTN-Z3-ZF1" id="SVe-s9-H8F"/>
+                        <outlet property="searchTextField" destination="xeK-uN-ZW4" id="bN7-VT-e6o"/>
+                        <outlet property="temperatureLabel" destination="xzk-6J-1Fn" id="FVo-RZ-SaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
